@@ -1,5 +1,21 @@
-#Membuat Link di Rails
+#URL Dengan Parameter
 
-untuk membuat link kita bisa gunakan kode seperti ini `<a href="contorller/action">Ke Link</a>`.
-namun di rails ini tidak dianjurkan. hal ini dikarenakan adanya named route (akan dibahas di pembahasan yang lain).
-Dengan named route maka kita akan lebih mudah dalam membuat link. dan membuat link yang sesuai dengan gaya Rails dan teknik named route bisa diterapkan adalah dengan kode sebagai berikut : `<%= link_to "label link", {controller: "nama_kontroller", action: "action"} %>`
+sudah pasti nanti suatu url akan ada parameter yang dipakai. bagaimana menanganinya di rails?
+contoh ulr dengan parameter yang sederhana adalah sebagai berikut : `irwanto.com/blog/index?id=10&page=5`.
+
+untuk mendapatkan parameternya kita bisagunakan kode seperti ini, `<%= params.inspect %>`. `params` adalah opject yanng didapatkan dari rails saat kita berada di controller atau view.
+hasil dari kode di atas adalah `<ActionController::Parameters {"id"=>"10", "page"=>"5", "controller"=>"blog", "action"=>"index"} permitted: false>`
+
+bagaimana cara mengambil parameternya? kita bisa coba lakukan pengolahan di controller ya,
+
+```
+@id = params[:id]
+@page = params[:page]
+```
+
+kemudian bisa dicetak di view deh
+
+```
+id : <%= @id %> <br />
+page: <%= @page %>
+```
