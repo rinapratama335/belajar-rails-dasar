@@ -7,6 +7,6 @@ class DemoController < ApplicationController
   end
 
   def iseng
-    redirect_to action: 'index'
+    redirect_to controller: 'home', action: 'index'
   end
 end
