@@ -27,3 +27,10 @@
 <% @nilai.each do |nilai| %>
 <%= nilai %><br />
 <% end %>
+
+<br />
+
+<%# Membuat Link %>
+<a href='/demo/coba'>Ke Coba</a>
+<br>
+<%= link_to "Ke Coba 2", {controller: 'demo', action: 'coba'} %>
