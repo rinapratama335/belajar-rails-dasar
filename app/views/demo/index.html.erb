@@ -9,7 +9,7 @@
 <br />
 <br />
 
-<% 10.times do %>
+<% 3.times do %>
 <%= 'ruby sangat keren ya' %>
 <br />
 <% end %>
@@ -34,3 +34,13 @@
 <a href='/demo/coba'>Ke Coba</a>
 <br>
 <%= link_to "Ke Coba 2", {controller: 'demo', action: 'coba'} %>
+
+<br />
+<br />
+
+<%= params.inspect %>
+<br />
+<br />
+
+id : <%= @id %> <br />
+page: <%= @page %>

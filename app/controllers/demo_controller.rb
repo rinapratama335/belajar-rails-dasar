@@ -4,6 +4,9 @@ class DemoController < ApplicationController
     @nama = "Irwanto"
     @alamat = "Gunungkidul"
     @nilai = [85, 89, 80, 90]
+
+    @id = params[:id]
+    @page = params[:page]
   end
 
   def coba
