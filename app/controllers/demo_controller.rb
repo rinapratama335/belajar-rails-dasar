@@ -1,6 +1,5 @@
 class DemoController < ApplicationController
   def index
-    render "coba"
   end
 
   def coba
@@ -8,6 +7,6 @@ class DemoController < ApplicationController
   end
 
   def iseng
-    render "home/index"
+    redirect_to action: 'index'
   end
 end
