@@ -1,5 +1,9 @@
 class DemoController < ApplicationController
   def index
+    @kegiatan = "Saya sedang belajar bahasa pemrograman Ruby dengan Framework Rails"
+    @nama = "Irwanto"
+    @alamat = "Gunungkidul"
+    @nilai = [85, 89, 80, 90]
   end
 
   def coba
