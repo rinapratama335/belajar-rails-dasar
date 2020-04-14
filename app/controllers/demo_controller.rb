@@ -10,6 +10,8 @@ class DemoController < ApplicationController
   end
 
   def coba
+    @id = params[:id]
+    @page = params[:page]
     render "main"
   end
 
