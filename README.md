@@ -1,24 +1,3 @@
-# README
+#Membuat Controller Dasar
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Untuk membuat controller kita bisa gunakan perintah `rails g controller <nama_controller> <nama_action>`. Contoh `rails g controller demo index`
