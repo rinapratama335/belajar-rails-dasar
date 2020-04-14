@@ -8,6 +8,6 @@ class DemoController < ApplicationController
   end
 
   def iseng
-    render plain: 'text text text'
+    render "home/index"
   end
 end
